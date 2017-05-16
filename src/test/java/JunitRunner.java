@@ -9,11 +9,11 @@ public class JunitRunner {
 
     public static void main(String[] args) {
 
-        String className = "bean.ProductTest";
+        String className = "JUnitTestSuite";
         Class class4Test = null;
 
         try {
-            class4Test = Class.forName("bean.ProductTest");
+            class4Test = Class.forName(className);
         } catch (ClassNotFoundException e) {
             System.out.println("No this Class");
             e.printStackTrace();
